@@ -5,7 +5,7 @@ import useAuth from "./hooks/useAuth";
 
 
 function Prive() {
-   const { setMillion, setFilter, million } = useAuth()
+   const { setMillion } = useAuth()
 
    useEffect(() => {
       fetch('https://jsonplaceholder.typicode.com/posts')

@@ -1,0 +1,91 @@
+@import "../../utils/scss/var.scss";
+
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    margin-top: 80px;
+    margin-right: 130px;
+    margin-bottom: 40px;
+
+    &_left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 328px;
+    }
+
+    &_qarsak_otas{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 55px;
+    }
+
+    &_share_soni{
+        margin-top: 50px;
+    }
+
+
+    &_rigth{
+        width: 734px;
+    }
+
+    &_header_span{
+        font-family: Roboto Mono;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $hira;
+    }
+
+    &_header_p{
+        font-family: Roboto Mono;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 24px;
+    }
+
+    &_span_otasi{
+        display: flex;
+        align-items: center;
+        width: 280px;
+        justify-content: space-between;
+        color: $hira;
+    }
+
+    &_data{
+        font-family: Roboto Mono;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;    
+        color: #474747;       
+    }
+
+    &_ajrat{
+         border-right: 1px solid $hira;
+         height: 15px;
+    }
+
+    &_vaqt_otas{
+        font-family: Roboto Mono;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+        width: 125px;      
+    }
+}

@@ -3,7 +3,7 @@ import { Auth } from "../content/Auth";
 
 
 function useAuth() {
-   const { auth,setAuth, token, setToken, filter, setFilter,million, setMillion, Id, setId } = useContext(Auth)
+   const { auth,setAuth, token, setToken, filter, setFilter,million, setMillion, Id, setId, inner, setInner } = useContext(Auth)
 
     return { 
         auth,
@@ -15,7 +15,9 @@ function useAuth() {
         million,
         setMillion,
         Id,
-        setId
+        setId,
+        inner,
+        setInner
     };
 }
 

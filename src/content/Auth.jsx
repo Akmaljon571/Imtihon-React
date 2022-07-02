@@ -8,9 +8,10 @@ export const AuthPriveder = ({ children }) => {
 
     const [auth, setAuth] = useState(local || ''); // Auth prive || public
     const [token, setToken] = useState(local || ''); // Token localga saqlash uchun 
-    const [filter, setFilter] = useState([]); // ummumiy data amulomlar
-    const [million, setMillion ] = useState([]); // filterlangan data malumotlari
+    const [million, setMillion ] = useState([]); // ummumiy data amulomlar
+    const [filter, setFilter] = useState([]); // filterlangan data malumotlari
     const [Id, setId] = useState(0); // Id olish
+    const [inner, setInner] = useState([]); // tanlangan Idni olish uchun
     const data = {
         auth, 
         setAuth,
@@ -21,7 +22,9 @@ export const AuthPriveder = ({ children }) => {
         million,
         setMillion,
         Id,
-        setId
+        setId,
+        inner,
+        setInner
     }
  
     return <Auth.Provider value={data}>{ children }</Auth.Provider>
