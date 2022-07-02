@@ -17,10 +17,10 @@ function MainUser() {
    const navigate = useNavigate() 
    useEffect(() => {
     setId(0)
-   }, []);
+   }, [setId]);
    useEffect(() => {
         setFilter(million.slice(1, 10))
-   }, [million]);
+   }, [million, setFilter]);
 
 
    let itemLink = (eky) => {
@@ -31,7 +31,7 @@ function MainUser() {
     if (Id !== 0) {
         navigate('/single')
     }
-   }, [Id]);
+   }, [Id, navigate]);
 
 
 
@@ -80,7 +80,7 @@ function MainUser() {
                 <div className="user_link">
                     <label htmlFor="input" className='user_label'>
                         EXPLORE ME
-                        <img src={image} alt="image" className='user_label_image' />
+                        <img src={image} alt="tabiat" className='user_label_image' />
                         <Link to='/f'>
                         <input type="submit" id="input" className="none" />
                         </Link>

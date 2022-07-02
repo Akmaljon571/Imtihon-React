@@ -11,19 +11,19 @@ function MainContent() {
     const { Id, inner, setInner } = useAuth()
     const navigate = useNavigate()
     useEffect(() => {
-        if (Id == 0){
+        if (Id === 0){
             navigate('/')
          } 
-    }, []);
-
+    }, [Id, navigate]);
     useEffect(() => {
-        if (Id !== 0) {
+        if (Id === 0){
+            return
+        } else {
             fetch(`https://jsonplaceholder.typicode.com/posts/${Id}`)
             .then(re => re.json())
             .then(data => setInner([data]))
         }
-
-    }, [Id]);
+    }, [Id, setInner]);
 
 
 

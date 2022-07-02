@@ -58,7 +58,7 @@ function Public() {
     })
       .then((re) => re.json())
       .then((data) => setToken(data.token));
-  }, [auth]);
+  }, [auth, setToken]);
 
   return (
     <Container>

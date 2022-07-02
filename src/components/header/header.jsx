@@ -3,7 +3,6 @@ import Logo from '../../img/Group176.png'
 import Hum from '../../img/MenuIcon.png'
 import { Link, NavLink } from 'react-router-dom'
 import { Input } from 'antd';
-import { AudioOutlined } from '@ant-design/icons';
 
 function Header() {
       

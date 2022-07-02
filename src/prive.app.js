@@ -11,7 +11,7 @@ function Prive() {
       fetch('https://jsonplaceholder.typicode.com/posts')
        .then(re => re.json())
        .then(data => setMillion(data)) 
-   }, []);
+   }, [setMillion]);
 
     return ( 
       <Container>
