@@ -33,19 +33,18 @@ function MainContent() {
 
 
     return ( 
-        <>
         <div className="content">
             <div className="content_left">
                 <div className="content_svg">
                     <div className="content_qarsak_otas">
-                        <img src={qarsak} alt="qarsak" className='content_qarsak_soni' />
+                        <img src={qarsak} alt="qarsak" />
                         <span className="content_qarsak_soni">
                             125
                         </span>
                     </div>
                     <div className="content_qarsak_otas">
-                        <img src={share} alt="share" className='content_share_soni' />
-                        <span className="content_qarsak_soni">
+                        <img src={share} alt="share" />
+                        <span className="content_share_soni">
                             70
                         </span>
                     </div>
@@ -62,7 +61,7 @@ function MainContent() {
                             </span>
                             <span className="content_ajrat"></span>
                             <div className='content_vaqt_otas'>
-                                <img src={soat} width='16' height='16' alt="soat" />
+                                <img src={soat} alt="soat" />
                                 <span className="content_vaqt">3 minutes read</span>
                             </div>
                         </div>
@@ -74,7 +73,6 @@ function MainContent() {
 
 
         </div>
-        </>
      );
 }
 

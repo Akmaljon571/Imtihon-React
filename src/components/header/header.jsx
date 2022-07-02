@@ -6,14 +6,6 @@ import { Input } from 'antd';
 import { AudioOutlined } from '@ant-design/icons';
 
 function Header() {
-    const suffix = (
-        <AudioOutlined
-          style={{
-            fontSize: 16,
-            color: '#1890ff',
-          }}
-        />
-      );
       
       const onSearch = (value) => console.log(value);
       const { Search } = Input;
