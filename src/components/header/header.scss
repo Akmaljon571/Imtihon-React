@@ -1,1 +1,130 @@
-@import "../../utils/scss/var.scss"
+@import "../../utils/scss/var.scss";
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+
+    &_list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        margin-right: 146px;
+        margin-left: 227px;
+        margin-top: 10px;
+    }
+
+    &_navlink{
+       color: $header;
+       padding: 3px;
+
+       &:hover{
+        color: $header;
+        padding-bottom: 5px;
+        border-bottom: 2px solid black;
+    }
+    }
+
+    &_item{
+        list-style: none;
+        font-family: Roboto Mono;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    &_hum{
+        display: none;
+    }
+
+}
+
+.active{
+    border-bottom: 2px solid black;
+    color: $black;
+    padding-bottom: 5px;
+}
+
+.ant-input-group-wrapper{
+    width: 256px !important;
+}
+
+.ant-input{
+    background-color: #F4F4F4 !important;
+    border: none !important;
+    padding: 8px 14px !important;
+    width: 216px !important;
+    font-family: Roboto Mono !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 16px !important;
+    letter-spacing: 0em !important;
+    text-align: left !important;
+}
+
+.ant-input-search-button{
+    background-color: $sabziRang !important;
+    padding: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    border: none !important;
+    box-shadow: none;
+
+  
+}
+
+
+
+
+@media only screen and (max-width: 360px){
+   .header{
+
+    flex-direction: column;
+    width: 320px;
+
+      &_img{
+        width: 120px;
+        height: 33px;
+      }
+
+      &_list{
+        display: none;
+      }
+
+      &_ota{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 32px;
+      }
+
+      &_hum{
+        display: inline-block;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+      }
+
+   }
+
+   .ant-input-group-wrapper{
+    width: 320px !important;
+   }
+   
+   .ant-input{
+    width: 275px !important;
+    height: 44px !important; 
+   }
+
+   .ant-input-search-button{
+    height: 44px !important;
+    margin-bottom: 50px;
+   }
+   
+}

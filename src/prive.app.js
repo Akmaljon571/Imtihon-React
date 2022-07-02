@@ -1,10 +1,13 @@
-import { Container, Header, Main } from "./components";
+import { Container, Header, Main, Footer } from "./components";
+import { RoutesFunch } from "./routes/RoutesFunch";
 
 function Prive() {
     return ( 
       <Container>
         <Header />
-        <Main />
+        <Main>
+          <RoutesFunch />
+        </Main>
         <Footer />
       </Container>
 
