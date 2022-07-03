@@ -10,10 +10,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 50%;
-        margin-right: 146px;
-        margin-left: 227px;
-        margin-top: 10px;
+        width: 38%;
+        margin-left: 100px;
+        margin-top: 15px;
+        
     }
 
     &_navlink{
@@ -74,15 +74,44 @@
     align-items: center !important;
     border: none !important;
     box-shadow: none;
+}
 
-  
+.menyla{
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 25px 10px;
+    padding-right: 32px;
+}
+
+.mnu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_list_menu{
+  margin-top: 128px;
+}
+
+.header_item_menu{
+  text-align: center;
+  list-style: none;
+  margin-bottom: 55px;
+}
+
+.cursor{
+  cursor: pointer;
 }
 
 
 
 
 @media only screen and (max-width: 360px){
-   .header{
+  .header{
 
     flex-direction: column;
     width: 320px;

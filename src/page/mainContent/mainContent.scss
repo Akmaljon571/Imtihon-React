@@ -6,7 +6,7 @@
     align-items: flex-start;
     justify-content: space-between; 
     margin-top: 80px;
-    margin-right: 170px;
+    margin-right: 260px;
     color: #474747;
     margin-bottom: 40px;
 
@@ -15,6 +15,7 @@
         align-items: center;
         justify-content: center;
         width: 328px;
+        margin-top: 10px;
     }
 
     &_qarsak_otas{
@@ -178,6 +179,13 @@
     &_like{
         margin-bottom: 40px;
         margin-top: 80px;
+        font-family: Roboto Mono;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+
     }
 
     

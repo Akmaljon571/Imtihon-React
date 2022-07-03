@@ -1,1 +1,170 @@
-@import "../../utils/scss/var.scss"
+@import "../../utils/scss/var.scss";
+
+.footer{ 
+    position: relative;
+    height: 306px;
+    margin-left: -110px;
+    display: flex;
+    margin-right: -117px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    &_father{
+        position: relative;
+        height: 306px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+    }
+
+    &_img{
+        float: left;
+    }
+
+    &_logo{
+        margin-top: -158px;
+        margin-left: 80px;
+    }
+
+    &_bg{
+        position: absolute;
+        top: 0;
+        height: 306px;
+        width: 700px;
+        margin-left: -100px;
+    }
+
+    &_list_father{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 690px;
+        margin-top: 40px;
+    }
+
+    &_bgImage{
+        display: none;
+    }
+
+    &_list1{
+        list-style: none;
+        padding: 0;
+
+        &_blog{
+            padding: 0;
+            list-style: none;
+            margin-top: -75px;
+        }
+    }
+
+    &_item1{
+        list-style: none;
+        margin-bottom: 17px;
+    }
+
+    &_item{
+        font-family: Segoe UI;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 16px;
+        color: #fff;
+        list-style: none;
+    }
+
+    &_item1_h2{
+        color: #fff;
+        font-family: Segoe UI;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+}
+
+.Footer_Navlink{
+    color: #fff;
+}
+
+.footer_active{
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff;
+}
+
+@media only screen and (max-width: 360px){
+    .footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      
+        &_father{
+            height: auto;
+        }
+
+        &_logo{
+            width: 120px;
+            position: absolute;
+            margin: 0;
+            top: 0;
+            padding-top: 38px;
+        }
+
+        &_img{
+            width: 0;
+        }
+
+        &_list_father{
+            display: flex;
+            align-items: center;
+            height: auto;
+            flex-direction: column;
+        }
+ 
+        &_bg{
+            display: none;
+        }
+
+        &_bgImage{
+            display: inline-block;
+            position: absolute;
+            background-image: url(../../img/telefon.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            width: 360px;
+            height: 100%;
+            top: 70px;
+            margin-left: -14px;
+        }
+
+        &_item1_h2{
+            font-family: Segoe UI;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        &_list1{
+            margin-left: -140px;
+
+            &_blog{
+                margin-top: 30px;
+                margin-left: -260px;
+            }
+        }
+    }
+
+    .chisii{
+        margin-top: 40px;
+    }
+
+
+}
+

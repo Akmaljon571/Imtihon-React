@@ -1,10 +1,12 @@
 import { useEffect } from "react";
+import Footer from '../../components/footer/footer'
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import qarsak from "../../img/Group147.png";
 import share from "../../img/Vector.png";
 import soat from "../../img/bytesize_clock.png";
 import "./mainContent.scss";
+import { Container } from "../../components";
 
 function MainContent() {
   const { Id, inner, setInner, filter, setId, setFilter, million} = useAuth();
@@ -31,6 +33,8 @@ function MainContent() {
 
   return (
     <>
+    <Container>
+
       <div className="content">
         <div className="content_left">
           <div className="content_svg">
@@ -130,6 +134,8 @@ function MainContent() {
             </ul>
         </div>
       </div>
+       </Container>
+      <Footer />
     </>
   );
 }

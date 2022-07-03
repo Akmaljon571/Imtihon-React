@@ -2,6 +2,12 @@
 
 .main{
     margin-top: 29px;
-    margin-right: 107px;
+    margin-right: 117px;
     min-height: 500px;
+    margin-left: 110px;
+}
+@media only screen and (max-width: 360px){
+   .main{
+    margin: 0;
+   }
 }

@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import './mainUser.scss'
+import Footer from '../../components/footer/footer'
 import image from '../../img/Iconcolor.png'
 import fc from '../../img/fc.png'
 import github from '../../img/github.png'
@@ -10,6 +11,7 @@ import useAuth from '../../hooks/useAuth'
 import soat from '../../img/bytesize_clock.png'
 import rigth from '../../img/rigth.png'
 import left from '../../img/left.png'
+import { Container } from '../../components'
 
 
 function MainUser() {
@@ -18,6 +20,7 @@ function MainUser() {
    useEffect(() => {
     setId(0)
    }, [setId]);
+   
    useEffect(() => {
         setFilter(million.slice(1, 10))
    }, [million, setFilter]);
@@ -68,6 +71,9 @@ function MainUser() {
 
 
     return ( 
+      <>
+       <Container>
+
         <div className="user">
             <div className="user_left">
                <h2 className="user_h2">
@@ -142,6 +148,9 @@ function MainUser() {
               </div>
             </div>
         </div>
+       </Container>
+        <Footer />
+      </>
      );
 }
 

@@ -1,4 +1,4 @@
-import { Container, Header, Main, Footer } from "./components";
+import { Header, Main } from "./components";
 import { RoutesFunch } from "./routes/RoutesFunch";
 import { useEffect } from 'react'
 import useAuth from "./hooks/useAuth";
@@ -14,13 +14,12 @@ function Prive() {
    }, [setMillion]);
 
     return ( 
-      <Container>
+      <>
         <Header />
         <Main>
           <RoutesFunch />
         </Main>
-        <Footer />
-      </Container>
+      </>
 
      );
 } 

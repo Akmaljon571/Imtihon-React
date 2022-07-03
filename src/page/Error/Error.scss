@@ -1,0 +1,60 @@
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: #474747;
+
+    &_h2{
+        margin-top: 50px;
+        font-family: Roboto Mono;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &_p{
+        font-family: Roboto Mono;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 607px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &_label{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &_arrow{
+        margin-left: 16px; 
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .error{
+        width: 320px;
+        margin: 0;
+        margin-top: 100px;
+
+
+        &_img{
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        &_p{
+            display: none;
+        }
+    }
+}
