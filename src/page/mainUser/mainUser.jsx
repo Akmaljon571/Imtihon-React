@@ -13,8 +13,8 @@ import left from '../../img/left.png'
 
 
 function MainUser() {
-   const { filter, setFilter, million, Id, setId } = useAuth()
-   const navigate = useNavigate() 
+  const { filter, setFilter, million, Id, setId } = useAuth()
+  const navigate = useNavigate() 
    useEffect(() => {
     setId(0)
    }, [setId]);
@@ -113,7 +113,7 @@ function MainUser() {
                             <span className="inner_rigt">User Interface</span>
                         </div>
                         <div className="inner_main">
-                            {key.body}
+                            {key.body.slice(0, 80)}
                         </div>
                         <div className="inner_footer">
                           <span className="inner_footer_span">
