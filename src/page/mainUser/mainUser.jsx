@@ -63,6 +63,17 @@ function MainUser() {
     }
   };
 
+  const filterData = filter.filter((value) => {
+    if (searchBody === "") {
+      return value;
+    } else if (
+      value.body.toLowerCase().includes(searchBody.toLowerCase())
+    ) {
+      return value;
+    }
+
+  })
+
   return (
     <>
       <Container>
@@ -101,16 +112,7 @@ function MainUser() {
           <div className="inner">
             <h1 className="inner_h1">Recent Posts</h1>
             <ul className="inner_list">
-              {filter.filter((value) => {
-                if (searchBody === "") {
-                  return value;
-                } else if (
-                  value.body.toLowerCase().includes(searchBody.toLowerCase())
-                ) {
-                  return value;
-                }
-
-              }).map((key) => (
+              {filterData.map((key) => (
                   <li key={key.id} className="inner_item">
                   <Link
                     to="/"

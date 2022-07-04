@@ -25,7 +25,7 @@ function MainContent() {
         .then((data) => setInner([data]));
     }
     setFilter(million.slice(1, 4))
-  }, [Id, setInner]);
+  }, [Id, million, setInner, setFilter]);
 
   let itemLink = (eky) => {
     setId(eky)
