@@ -16,7 +16,6 @@ import { Container } from "../../components";
 function MainUser() {
   const { filter, setFilter, million, Id, setId, searchBody } = useAuth();
 
-  console.log(searchBody);
   const navigate = useNavigate();
   useEffect(() => {
     setId(0);
@@ -66,9 +65,7 @@ function MainUser() {
   const filterData = filter.filter((value) => {
     if (searchBody === "") {
       return value;
-    } else if (
-      value.body.toLowerCase().includes(searchBody.toLowerCase())
-    ) {
+    } else if (value.body.toLowerCase().includes(searchBody.toLowerCase())) {
       return value;
     }
 
