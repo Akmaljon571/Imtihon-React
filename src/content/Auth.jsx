@@ -12,6 +12,8 @@ export const AuthPriveder = ({ children }) => {
     const [filter, setFilter] = useState([]); // filterlangan data malumotlari
     const [Id, setId] = useState(0); // Id olish
     const [inner, setInner] = useState([]); // tanlangan Idni olish uchun
+    const [searchBody, setSearchBody] = useState(''); // search value
+
     const data = {
         auth, 
         setAuth,
@@ -24,7 +26,9 @@ export const AuthPriveder = ({ children }) => {
         Id,
         setId,
         inner,
-        setInner
+        setInner,
+        searchBody,
+        setSearchBody
     }
  
     return <Auth.Provider value={data}>{ children }</Auth.Provider>

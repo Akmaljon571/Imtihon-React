@@ -6,11 +6,14 @@ import { Input } from 'antd';
 import { useState } from 'react'
 import iks from '../../img/icon.png'
 import Container from '../container/container'
+import useAuth from '../../hooks/useAuth';
 
 function Header() {
-      
-      const onSearch = (value) => console.log(value);
       const { Search } = Input;
+      const { setSearchBody } = useAuth()
+      const onSearch = (value) => {
+          setSearchBody(value.target.value);
+      };
       const [menu, setmenu] = useState(false);
       
       const menular = () => {
@@ -60,7 +63,7 @@ function Header() {
                 </NavLink>
                </li>
             </ul>
-            <Search placeholder="search" onSearch={onSearch} enterButton />
+            <Search placeholder="search" onChange={onSearch} enterButton />
 
             {menu && 
             <div className='menyla'>
