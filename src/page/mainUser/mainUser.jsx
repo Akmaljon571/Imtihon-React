@@ -68,6 +68,8 @@ function MainUser() {
     } else if (value.body.toLowerCase().includes(searchBody.toLowerCase())) {
       return value;
     } 
+
+    return false
   })
 
   return (
@@ -108,7 +110,7 @@ function MainUser() {
           <div className="inner">
             <h1 className="inner_h1">Recent Posts</h1>
             <ul className="inner_list">
-              {filterData.map((key) => (
+              {filterData && filterData.map((key) => (
                   <li key={key.id} className="inner_item">
                   <Link
                     to="/"
