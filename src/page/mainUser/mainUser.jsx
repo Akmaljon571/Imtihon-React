@@ -63,12 +63,12 @@ function MainUser() {
   };
 
   const filterData = filter.filter((value) => {
-    if (searchBody === "") {
+    if (value.body.toLowerCase().includes(searchBody.toLowerCase())) {
       return value;
-    } else if (value.body.toLowerCase().includes(searchBody.toLowerCase())) {
-      return value;
+    } 
+    if (searchBody === '') {
+      return value
     }
-
   })
 
   return (
