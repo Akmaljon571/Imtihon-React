@@ -207,6 +207,54 @@
 }
 
 
+@media only screen and (max-width: 991px){
+  .user_left{
+   display: none;
+  }
+
+  .user{
+    padding: 0;
+  }
+
+  .inner{
+    width: 820px;
+
+
+    
+  }
+}
+
+@media only screen and (max-width: 605px){
+  .user_left{
+   display: none;
+  }
+
+  .user{
+    padding: 0;
+  }
+
+  .inner{
+    width: 420px;
+ 
+
+    &_h1{
+      font-family: Roboto Mono;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    &_main{
+      width: 350px;
+    }
+
+    
+  }
+}
+
+
 @media only screen and (max-width: 360px){
   .user_left{
     display: none;

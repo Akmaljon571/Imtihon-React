@@ -2,9 +2,27 @@
 
 
 .container{
-   width: 1300px;
+   max-width: 1300px;
    padding:0 10px;
    margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px){
+   .container{
+      max-width:701px;
+   }
+}
+@media only screen and (max-width: 768px){
+   .container{
+      padding-right: 70px;
+      max-width: 667px ;
+   }
+}
+@media only screen and (max-width: 605px){
+   .container{
+      max-width: 560px;
+      padding: 0 15px;
+   }
 }
 
 @media only screen and (max-width: 360px){

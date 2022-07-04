@@ -110,6 +110,78 @@
 
 
 
+@media only screen and (max-width: 991px){
+  .header{
+
+    &_img{
+      width: 120px;
+    }
+
+      &_list{
+        font-size: 12px;
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      &_item{
+        font-size: 8px;
+      }
+   }
+
+   
+   .ant-input-group-wrapper{
+    width: 200px !important;
+   }
+
+   .ant-input-group-wrapper{
+    width: 200px !important;
+   }
+   
+   .ant-input{
+    width: 185px !important;
+    height: 30px !important; 
+   }
+
+   .ant-input-search-button{
+    height: 24px !important;
+   }
+
+
+
+   
+}
+
+@media only screen and (max-width: 605px){
+  .header{
+
+      &_img{
+        width: 120px;
+        height: 33px;
+      }
+
+      &_list{
+        display: none;
+      }
+
+
+   }
+
+   .ant-input-group-wrapper{
+    width: 250px !important;
+   }
+   
+   .ant-input{
+    width: 210px !important;
+    height: 30px !important; 
+   }
+
+   .ant-input-search-button{
+    height: 24px !important;
+   }
+
+
+   
+}
 @media only screen and (max-width: 360px){
   .header{
 

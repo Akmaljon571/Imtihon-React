@@ -6,6 +6,32 @@
     min-height: 500px;
     margin-left: 110px;
 }
+
+
+@media only screen and (max-width: 991px){
+    .main{
+       max-width: 891px;
+       margin: 0 auto;
+       padding:0 30px;
+    }
+ }
+ @media only screen and (max-width: 768px){
+    .main{
+       max-width: 667px ;
+    }
+ }
+ @media only screen and (max-width: 605px){
+    .main{
+       max-width: 560px;
+       padding: 0 15px;
+    }
+ }
+ 
+ @media only screen and (max-width: 360px){
+    .main{
+       width: 360px;
+    }
+ }
 @media only screen and (max-width: 360px){
    .main{
     margin: 0;
