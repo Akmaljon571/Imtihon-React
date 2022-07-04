@@ -65,9 +65,8 @@ function MainUser() {
   const filterData = filter.filter((value) => {
     if (value.body.toLowerCase().includes(searchBody.toLowerCase())) {
       return value;
-    } 
-    if (searchBody === '') {
-      return value
+    } else {
+      return value;
     }
   })
 
