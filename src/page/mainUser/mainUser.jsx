@@ -63,11 +63,11 @@ function MainUser() {
   };
 
   const filterData = filter.filter((value) => {
-    if (value.body.toLowerCase().includes(searchBody.toLowerCase())) {
+    if (searchBody === '') {
+      return value
+    } else if (value.body.toLowerCase().includes(searchBody.toLowerCase())) {
       return value;
-    } else {
-      return value;
-    }
+    } 
   })
 
   return (

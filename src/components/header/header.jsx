@@ -12,7 +12,7 @@ function Header() {
       const { Search } = Input;
       const { setSearchBody } = useAuth()
       const onSearch = (value) => {
-          setSearchBody(value.target.value);
+          setSearchBody(value);
       };
       const [menu, setmenu] = useState(false);
       
@@ -63,7 +63,7 @@ function Header() {
                 </NavLink>
                </li>
             </ul>
-            <Search placeholder="search" onChange={onSearch} enterButton />
+            <Search placeholder="search" onSearch={onSearch} enterButton />
 
             {menu && 
             <div className='menyla'>
